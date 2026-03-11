@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+/* Fondo oscuro degradado */
+.mantenimiento-bg {
+    background: linear-gradient(135deg, #0b0f2f, #141b4d);
+}
+/* Card central */
+.mantenimiento-card {
+    background-color: #161c4d;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    max-width: 500px;
+    margin: auto;
+}
+/* Animación suave */
+.mantenimiento-card {
+    animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
