@@ -21,6 +21,8 @@ Aplicación web para la gestión de inventarios con control de usuarios, roles y
 ### 📦 Gestión de productos
 ![Productos](screenshots/productos.png)
 
+> ⚠️ Esta sección se encuentra actualmente en desarrollo.
+
 ---
 
 ### 🗂️ Categorías
