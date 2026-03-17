@@ -84,14 +84,7 @@ Luis Diaz
 
 ⭐ Nota
 
-Este proyecto fue desarrollado como parte de mi proceso de aprendizaje en desarrollo web, enfocado en buenas prácticas y gestión de sistemas reales.
+Este proyecto fue desarrollado como parte de mi proceso de aprendizaje en desarrollo web, enfocado en buenas prácticas y gestión de sistemas reales. 🚀
 
 
 ---
-
-# 🚀 4. Subir todo
-
-```bash
-git add .
-git commit -m "README estilo portafolio con capturas"
-git push
