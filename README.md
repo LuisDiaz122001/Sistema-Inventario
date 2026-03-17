@@ -14,6 +14,8 @@ Aplicación web para la gestión de inventarios con control de usuarios, roles y
 ### 📊 Dashboard
 ![Dashboard](screenshots/dashboard.png)
 
+> ⚠️ Esta sección se encuentra actualmente en desarrollo.
+
 ---
 
 ### 📦 Gestión de productos
@@ -30,6 +32,13 @@ Aplicación web para la gestión de inventarios con control de usuarios, roles y
 ![Usuarios](screenshots/usuarios.png)
 
 ---
+
+## 🚧 Funcionalidades en desarrollo
+
+- 📦 Gestión completa de productos
+- 📊 Dashboard con métricas
+- 📈 Reportes de inventario
+- 🖼️ Mejoras en carga de imágenes
 
 ## 🧠 Características
 
