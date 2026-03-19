@@ -17,7 +17,7 @@
             $pagina = 1;
         }else {
             $pagina = (int) $_GET['page'];
-             if ($pagina <= 1) {
+            if ($pagina <= 1) {
                 $pagina = 1;
             }
         }

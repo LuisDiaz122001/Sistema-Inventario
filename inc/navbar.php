@@ -2,7 +2,7 @@
     <div class="navbar-brand">
         <div class="navbar-brand">
             <a class="navbar-item" href="index.php?vista=home">
-                <img src="./img/imasterdevices.png" style="max-height: 70px;">
+                <img src="./img/imasterdevices.png" style="max-height: auto;">
             </a>
         </div>
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -45,16 +45,16 @@
             <div class="navbar-item has-dropdown is-hoverable">
                 <a class="navbar-link">Productos</a>
                 <div class="navbar-dropdown">
-                    <a class="navbar-item">
+                    <a class="navbar-item" href="index.php?vista=product_new">
                         Nuevo
                     </a>
-                    <a class="navbar-item">
+                    <a class="navbar-item" href="index.php?vista=product_list">
                         Lista
                     </a>
-                    <a class="navbar-item">
+                    <a class="navbar-item" href="index.php?vista=product_category">
                         Por Categorias
                     </a>
-                    <a class="navbar-item">
+                    <a class="navbar-item" href="index.php?vista=product_search">
                         Buscar
                     </a>
                 </div>

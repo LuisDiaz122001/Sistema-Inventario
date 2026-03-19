@@ -4,7 +4,6 @@
     // Verificar categoría
     $check_categoria=conexion();
     $check_categoria=$check_categoria->query("SELECT categoria_id FROM categoria WHERE categoria_id='$category_id_del'");
-
     if ($check_categoria->rowCount()==1) {
 
         // Verificar productos
@@ -12,7 +11,6 @@
         $check_productos=$check_productos->query("SELECT categoria_id FROM producto WHERE categoria_id='$category_id_del' LIMIT 1");
 
         if ($check_productos->rowCount()<=0) {
-
         // Eliminar categoría
             $eliminar_categoria=conexion();
             $eliminar_categoria=$eliminar_categoria->prepare("DELETE FROM categoria WHERE categoria_id=:id");
