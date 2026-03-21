@@ -2,7 +2,6 @@
 	<h1 class="title">Productos</h1>
 	<h2 class="subtitle">Buscar producto</h2>
 </div>
-
 <div class="container pb-6 pt-6">
     <?php
         require_once "./php/main.php";
@@ -42,12 +41,10 @@
         </div>
     </div>
     <?php
-
         // Eliminar producto
             if (isset($_GET['product_id_del'])) {
                 require_once "./php/producto_eliminar.php";
             }
-
         if (!isset($_GET['page'])) {
                 $pagina = 1;
             }else {
@@ -56,14 +53,11 @@
                     $pagina = 1;
                 }
             }
-
             $categoria_id = (isset($_GET['category_id'])) ? ($_GET['category_id']) : 0;
-
             $pagina=limpiar_cadena($pagina);
             $url="index.php?vista=product_search&page=";
             $registros=5;
             $busqueda=$_SESSION['busqueda_producto'];
-
             require_once "./php/producto_lista.php";
             }
     ?>

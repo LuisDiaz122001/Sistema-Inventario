@@ -21,7 +21,6 @@ require './inc/session_start.php';
         include './vistas/logout.php';
         exit();
       }
-
       include 'inc/navbar.php';
       include './vistas/' . $_GET['vista'] . '.php';
       include 'inc/script.php';

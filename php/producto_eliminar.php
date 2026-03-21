@@ -6,20 +6,15 @@ $check_producto = conexion();
 $check_producto = $check_producto->query("SELECT * FROM producto WHERE producto_id='$product_id_del'");
 
 if ($check_producto->rowCount() == 1) {
-
     $datos = $check_producto->fetch();
-
     $eliminar_producto = conexion();
     $eliminar_producto = $eliminar_producto->prepare("DELETE FROM producto WHERE producto_id=:id");
-
     $eliminar_producto->execute([":id" => $product_id_del]);
-
     // Eliminar imagen si existe
     if (!empty($datos['producto_foto']) && is_file("./img/producto/".$datos['producto_foto'])) {
         chmod("./img/producto/".$datos['producto_foto'], 0777);
         unlink("./img/producto/".$datos['producto_foto']);
     }
-
     if ($eliminar_producto->rowCount() == 1) {
         echo '
             <div class="notification is-success is-light">
@@ -35,7 +30,6 @@ if ($check_producto->rowCount() == 1) {
             </div><br>
         ';
     }
-
     $eliminar_producto = null;
 
 } else {
