@@ -1,10 +1,8 @@
 <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-        <div class="navbar-brand">
             <a class="navbar-item" href="index.php?vista=home">
                 <img src="./img/imasterdevices.png" style="max-height: auto;">
             </a>
-        </div>
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -74,4 +72,3 @@
         </div>
     </div>
 </nav>
-<br>
