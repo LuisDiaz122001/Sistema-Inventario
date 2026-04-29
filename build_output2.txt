@@ -1,0 +1,7 @@
+﻿
+> build
+> vite build
+
+[36mvite v7.3.2 [32mbuilding client environment for production...[36m[39m
+transforming...
+[32mÔ£ô[39m 24 modules transformed.
