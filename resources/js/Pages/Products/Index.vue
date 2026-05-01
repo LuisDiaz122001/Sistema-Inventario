@@ -25,7 +25,7 @@ const deleteProduct = (id) => {
 };
 
 const formatPrice = (price) => {
-    return new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP' }).format(price);
+    return new Intl.NumberFormat('es-CO', { maximumFractionDigits: 0 }).format(price);
 };
 </script>
 
@@ -94,7 +94,7 @@ const formatPrice = (price) => {
                                 >
                                     <td class="py-4 px-6">
                                         <div class="w-12 h-12 rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-700 flex items-center justify-center border border-gray-200 dark:border-gray-600">
-                                            <img v-if="product.image" :src="`/storage/${product.image}`" class="w-full h-full object-cover" :alt="product.name">
+                                            <img v-if="product.image_url" :src="product.image_url" class="w-full h-full object-cover" :alt="product.name">
                                             <ImageIcon v-else class="w-6 h-6 text-gray-400" />
                                         </div>
                                     </td>

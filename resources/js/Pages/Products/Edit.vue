@@ -22,7 +22,7 @@ const form = useForm({
     image: null,
 });
 
-const imagePreview = ref(props.product.image ? `/storage/${props.product.image}` : null);
+const imagePreview = ref(props.product.image_url ?? null);
 
 const handleImageUpload = (e) => {
     const file = e.target.files[0];

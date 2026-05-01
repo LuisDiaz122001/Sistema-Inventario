@@ -102,7 +102,9 @@ class ProductController extends Controller
             'category_id' => 'required|exists:categories,id',
         ]);
 
-        $data = $request->all();
+        // Excluimos 'image' de los datos base para no sobreescribir la imagen existente
+        // si el usuario no subió una nueva foto.
+        $data = $request->except('image');
 
         if ($request->hasFile('image')) {
             if ($product->image) {
